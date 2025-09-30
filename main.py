@@ -4,7 +4,7 @@ from Ejercicio_3.Cuadro import Cuadro
 from Ejercicio_4.Edificio import Edificio
 from Ejercicio_5.Figurass import Circuloo, Rectanguloo, Cuadradoo, Elipsee
 from Ejercicio_6.Personaa import Personaa   
-
+from Ejercicio_7.ejercicio7 import Proyecto, miembro_del_equipo, lugar_de_Actuacion
 
 if __name__ == "__main__":
     #EJERCICIO 1
@@ -73,3 +73,39 @@ if __name__ == "__main__":
 
     #EJERCICIO 7
     print("\nEJERCICIO 7")
+
+    proyecto1 = Proyecto(1, "Desarrollo de Software", "2023-01-01", "2023-12-31")
+    miembro1 = miembro_del_equipo(1, "Ana", "García", "Desarrolladora")
+    lugar1 = lugar_de_Actuacion(1, "Oficina Central", "Madrid")
+    miembro10 = miembro_del_equipo(1," Antonio","Lopez","Operario")
+    miembro2 = miembro_del_equipo(2, "Luis", "Martínez", "Gestor de Proyecto")
+    proyecto2 = Proyecto(2, "Investigación Médica", "2022-03-15", "2023-08-20")
+    miembro3 = miembro_del_equipo(3, "María", "López", "Investigadora")
+    lugar2 = lugar_de_Actuacion(2, "Laboratorio Norte", "Barcelona")
+    miembro4 = miembro_del_equipo(4, "Pedro", "Sánchez", "Coordinador")
+    proyecto3 = Proyecto(3, "Construcción de Puente", "2021-06-01", "2024-01-31")
+    miembro5 = miembro_del_equipo(5, "Lucía", "Fernández", "Ingeniera Civil")
+    lugar3 = lugar_de_Actuacion(3, "Zona Río", "Sevilla")
+    miembro6 = miembro_del_equipo(6, "Javier", "Ruiz", "Supervisor")
+    proyecto4 = Proyecto(4, "Campaña Publicitaria", "2023-02-10", "2023-11-30")
+    miembro7 = miembro_del_equipo(7, "Sofía", "Torres", "Creativa")
+    lugar4 = lugar_de_Actuacion(4, "Agencia Creativa", "Valencia")
+    miembro8 = miembro_del_equipo(8, "Miguel", "Gómez", "Director de Arte")
+
+        #AGRUPACION POR id --- NO SE PIDE EN EL ENUNCIADO, ME ABURRIA --------------------
+        todos = [obj for obj in globals().values() 
+                if isinstance(obj, (Proyecto, miembro_del_equipo, lugar_de_Actuacion))]
+        
+        ids = {}
+        for obj in todos:
+            ids.setdefault(obj.id, []).append(obj)
+
+        for grupo in ids.values():
+            if len(grupo) >= 3:  # al menos un proyecto, un miembro y un lugar
+                for o in grupo:
+                    print(o)
+                print("---")
+        #----------------------------------------------------------------------------------
+
+    #EJERCICIO 8
+    
