@@ -1,5 +1,6 @@
-from Ejercicio_1 import Circulo, Rectangulo, Cuadrado, Elipse
+from Ejercicio_1.Figuras import Circulo, Rectangulo, Cuadrado, Elipse
 from Ejercicio_2.Persona import Persona
+from Ejercicio_3.Cuadro import Cuadro
 
 
 if __name__ == "__main__":
@@ -27,4 +28,18 @@ if __name__ == "__main__":
     print(p2)
     print(p2.casado_con(p1))
     print(p2.es_hijo_de(p4,p3))
+ 
+    #EJERCICIO 3
+    print("\nEJERCICIO 3")
+    cuadro1 = Cuadro("La Gioconda", "1503-1516", "Oleo", "Sfumato", "Madera de álamo", "leonardo da Vinci", "Regular")
+    cuadro2 = Cuadro("Gioconda de El Prado", "1519-1516", "Oleo", "Pincelada Simple", "Madera de nogal", "Leonardo da Vinci", "Buena")
 
+    print(cuadro1)
+    print(cuadro1.localizado_en("Museo del Louvre"))
+
+    print(cuadro2)
+    print(cuadro2.replica_de("La Gioconda"))
+    print(cuadro2.localizado_en("Museo del Prado"))
+
+    #EJERCICIO 4
+    
