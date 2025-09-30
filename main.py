@@ -1,6 +1,7 @@
 from Ejercicio_1.Figuras import Circulo, Rectangulo, Cuadrado, Elipse
 from Ejercicio_2.Persona import Persona
 from Ejercicio_3.Cuadro import Cuadro
+from Ejercicio_4.Edificio import Edificio
 
 
 if __name__ == "__main__":
@@ -42,4 +43,10 @@ if __name__ == "__main__":
     print(cuadro2.localizado_en("Museo del Prado"))
 
     #EJERCICIO 4
+    print("\nEJERCICIO 4")
+
+    Edificio1 = Edificio("Catedral de Santiago de Compostela", "Católico", "Santiago de Compostela", "1075", "1128", "1128", "1211", "Granito", "Románico")
+    
+    print(Edificio1)
+    
     

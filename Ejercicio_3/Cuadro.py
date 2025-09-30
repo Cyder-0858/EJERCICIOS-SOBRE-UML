@@ -8,7 +8,7 @@ class Cuadro:
         self.Autor = Autor
         self.Estado_Conservacion = Estado_Conservacion
 
-    def replica_de(self):
+    def replica_de(self, replica_de):
         self.replica_de = replica_de
         return f"El cuadro {self.Titulo} es una replica de {self.replica_de}"
     
