@@ -2,11 +2,12 @@ from Ejercicio_1.Figuras import Circulo, Rectangulo, Cuadrado, Elipse
 from Ejercicio_2.Persona import Persona
 from Ejercicio_3.Cuadro import Cuadro
 from Ejercicio_4.Edificio import Edificio
+from Ejercicio_5.Figurass import Circuloo, Rectanguloo, Cuadradoo, Elipsee
 
 
 if __name__ == "__main__":
     #EJERCICIO 1
-    print("EJERCICIO 1")
+    print("\nEJERCICIO 1")
     c1 = Circulo(1, 5, "rojo")
     r1 = Rectangulo(1, 4, 6, "azul")
     q1 = Cuadrado(1, 4, "verde")
@@ -49,4 +50,16 @@ if __name__ == "__main__":
     
     print(Edificio1)
     
-    
+    #EJERCICIO 5
+    print("\nEJERCICIO 5")
+
+    c1 = Circuloo(1, 5, "rojo")
+    r1 = Rectanguloo(1, 4, 6, "azul")
+    q1 = Cuadradoo(1, 4, "verde")
+    e1 = Elipsee(1, 5, 3, "amarillo")
+                 
+    print(c1)
+    print(r1)
+    print(q1)
+    print(e1)
+
