@@ -3,6 +3,7 @@ from Ejercicio_2.Persona import Persona
 from Ejercicio_3.Cuadro import Cuadro
 from Ejercicio_4.Edificio import Edificio
 from Ejercicio_5.Figurass import Circuloo, Rectanguloo, Cuadradoo, Elipsee
+from Ejercicio_6.Personaa import Personaa   
 
 
 if __name__ == "__main__":
@@ -63,3 +64,12 @@ if __name__ == "__main__":
     print(q1)
     print(e1)
 
+    #EJERCICIO 6
+    print("\nEJERCICIO 6")
+
+    persona1 = Personaa("Juan", "Pérez", 30, "Masculino", "12345678A")
+
+    print(persona1)
+
+    #EJERCICIO 7
+    print("\nEJERCICIO 7")
