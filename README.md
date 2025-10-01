@@ -52,3 +52,50 @@ EJERCICIO 7:
 EJERCICIO 8:
     Una actuación arqueológica tiene una fecha de inicio, una fecha de fin y un tipo (sondeo, excavación o 
     seguimiento). Define la clase correspondiente.
+
+EJERCICIO 9:
+    Define una clase a partir del objeto representado en la foto que se muestra a continuación, usando tipos 
+    enumerados y elementos enumerados. ¿Qué cuadro es? ¿A quién representa? ¿Quién lo pintó? ¿Dónde? 
+    ¿Existen copias? ¿Qué técnica se usó? ¿De qué material es su soporte? ¿Dónde está ahora? ¿Cómo de bien se 
+    conserva? 
+
+EJERCICIO 10:
+    A partir de las clases definidas en el Ejercicio 7, define las asociaciones necesarias para conectarlas. 
+
+EJERCICIO 11:
+    A partir del diagrama de objetos obtenido en el Ejercicio 3, propón un diagrama de clases correspondiente con 
+    asociaciones, cardinalidades y roles. 
+
+EJERCICIO 12:
+    Una estructura arqueológica se identifica mediante un código, tiene una datación, esta compuesta de ciertos 
+    materiales y puede estar compuesta por otras estructuras. Define el diagrama de clases correspondiente. 
+
+EJRCICIO 13:
+    Un polígono es una porción de plano definida por al menos tres puntos. El diagrama de objetos que se muestra 
+    a continuación representa un ejemplo de polígono (un cuadrado en este caso). 
+
+EJERCICIO 14:
+    Define un diagrama de objetos coherente con el diagrama de clases construido en el Ejercicio 13 para 
+    representar dos triángulos que tengan un lado común. 
+
+EJERCICIO 15:
+    Modifica el diagrama de clases del Ejercicio 13 para acomodar las situaciones en las que un punto pertenezca a 
+    varios polígonos a la vez, y ajustar el diagrama de objetos del Ejercicio 14 consecuentemente. 
+
+EJERCICIO 16:
+    A partir de la clase Persona definida en el Ejercicio 6 y del diagrama de objetos definido en el Ejercicio 2, añade 
+    asociaciones, cardinalidades y roles para modelar las relaciones familiares pertinentes. 
+
+EJERCICIO 17:
+    Se desea modelar el funcionamiento de una biblioteca municipal, la cual consta de tres plantas, de las que 
+    necesitamos saber la capacidad de sus estanterías (es decir, el número de libros que pueden albergar) para así 
+    realizar las reordenaciones oportunas cuando se reciben nuevos ejemplares. 
+    Los libros se organizan según la temática: libros infantiles, narrativa, ensayo, poesía, etc. Para ello, se deben 
+    registrar los libros que se encuentran en la biblioteca, teniendo en cuenta que puede haber más de un ejemplar 
+    de cada libro. Cada libro contará al menos con un identificador único, una fecha de préstamo y otra de entrega. 
+    El préstamo máximo será de 30 días. Los lectores que no entreguen el libro a tiempo tendrán penalización. 
+    Para aplicar esa penalización, la biblioteca cuenta con una ficha por cada lector, con su número de 
+    identificación o pasaporte, su nombre y su dirección postal. Para fomentar la lectura, los empleados de la 
+    biblioteca, que poseen su propia identificación como tales, pueden llevar libros a casa por un plazo mayor que 
+    los usuarios convencionales. 
+    Crea el modelo de clases correspondiente. 

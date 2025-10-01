@@ -7,7 +7,7 @@ from Ejercicio_6.Personaa import Personaa
 from Ejercicio_7.ejercicio7 import Proyecto, miembro_del_equipo, lugar_de_Actuacion
 from Ejercicio_8.Arqueologia import actuacion_arqueologica
 from Ejercicio_9.Pintura import TipoTecnica, TipoSub_tecnica, TipoMaterial, TipoEstado_Conservacion, Pintura
-
+from Ejercicio_10.Asociaciones_7 import Personaaaa, Proyectoooo, Lugar
 
 
 
@@ -133,4 +133,16 @@ if __name__ == "__main__":
 
     #EJERCICIO 10
     print("\nEJERCICIO 10")
+
+    proyectoA = Proyectoooo("Proyecto Beta", "2024-01-01", "2024-12-31")
+    print(proyectoA)
+    personaA = Personaaaa(proyectoA, "Juan", "Pérez", "Analista")
+    print(personaA)
+    lugarA = Lugar(personaA, "Oficina Sur", "Sevilla")
+    print(lugarA)
+
+
+    #EJERCICIO 11
+    print("\nEJERCICIO 11")
+    
     
