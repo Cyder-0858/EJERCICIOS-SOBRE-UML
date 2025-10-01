@@ -6,8 +6,7 @@ from Ejercicio_5.Figurass import Circuloo, Rectanguloo, Cuadradoo, Elipsee
 from Ejercicio_6.Personaa import Personaa   
 from Ejercicio_7.ejercicio7 import Proyecto, miembro_del_equipo, lugar_de_Actuacion
 from Ejercicio_8.Arqueologia import actuacion_arqueologica
-
-
+from Ejercicio_9.Pintura import TipoTecnica, TipoSub_tecnica, TipoMaterial, TipoEstado_Conservacion, Pintura
 
 
 
@@ -125,3 +124,13 @@ if __name__ == "__main__":
     print(actuacion2)
     print(actuacion3)
     print(actuacion4)  # Tipo inválido
+
+    #EJERCICIO 9
+    print("\nEJERCICIO 9")
+
+    pintura1 = Pintura("La Gioconda", "Retrato de Lisa Gherardini", "Leonardo da Vinci", "Museo del Louvre", "Si" ,TipoTecnica.OLEO, TipoSub_tecnica.SFUMATO, TipoMaterial.MADERA_DE_ALAMO, TipoEstado_Conservacion.REGULAR)
+    print(pintura1)
+
+    #EJERCICIO 10
+    print("\nEJERCICIO 10")
+    
