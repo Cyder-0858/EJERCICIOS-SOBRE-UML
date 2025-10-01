@@ -9,7 +9,7 @@ from Ejercicio_8.Arqueologia import actuacion_arqueologica
 from Ejercicio_9.Pintura import TipoTecnica, TipoSub_tecnica, TipoMaterial, TipoEstado_Conservacion, Pintura
 from Ejercicio_10.Asociaciones_7 import Personaaaa, Proyectoooo, Lugar
 from Ejercicio_11.CuadrosACR import cuadro11, museo11
-
+from Ejercicio_12.estructura_arqueologica import EstructuraArqueologica
 
 if __name__ == "__main__":
     #EJERCICIO 1
@@ -164,6 +164,23 @@ if __name__ == "__main__":
 
     #EJERCICIO 12
     print("\nEJERCICIO 12")
+
+    # Crear estructuras simples
+    estructura1 = EstructuraArqueologica("E001", "Siglo I", ["piedra", "madera"])
+    estructura2 = EstructuraArqueologica("E002", "Siglo II", ["ladrillo"])
+    estructura3 = EstructuraArqueologica("E003", "Siglo III", ["adobe", "piedra"])
+
+    # Componer estructuras
+    estructura1.agregar_estructura(estructura2)
+    estructura1.agregar_estructura(estructura3)
+
+    # Mostrar resultados
+    print(estructura1)
+    print(estructura2)
+    print(estructura3)
+
+    #EJERCICIO 13
+    print("\nEJERCICIO 13")
 
     
     
