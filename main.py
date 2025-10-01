@@ -5,6 +5,12 @@ from Ejercicio_4.Edificio import Edificio
 from Ejercicio_5.Figurass import Circuloo, Rectanguloo, Cuadradoo, Elipsee
 from Ejercicio_6.Personaa import Personaa   
 from Ejercicio_7.ejercicio7 import Proyecto, miembro_del_equipo, lugar_de_Actuacion
+from Ejercicio_8.Arqueologia import actuacion_arqueologica
+
+
+
+
+
 
 if __name__ == "__main__":
     #EJERCICIO 1
@@ -93,19 +99,29 @@ if __name__ == "__main__":
     miembro8 = miembro_del_equipo(8, "Miguel", "Gómez", "Director de Arte")
 
         #AGRUPACION POR id --- NO SE PIDE EN EL ENUNCIADO, ME ABURRIA --------------------
-        todos = [obj for obj in globals().values() 
-                if isinstance(obj, (Proyecto, miembro_del_equipo, lugar_de_Actuacion))]
+    todos = [obj for obj in globals().values() 
+            if isinstance(obj, (Proyecto, miembro_del_equipo, lugar_de_Actuacion))]
         
-        ids = {}
-        for obj in todos:
-            ids.setdefault(obj.id, []).append(obj)
+    ids = {}
+    for obj in todos:
+        ids.setdefault(obj.id, []).append(obj)
 
-        for grupo in ids.values():
-            if len(grupo) >= 3:  # al menos un proyecto, un miembro y un lugar
-                for o in grupo:
-                    print(o)
-                print("---")
+    for grupo in ids.values():
+        if len(grupo) >= 3:  # al menos un proyecto, un miembro y un lugar
+            for o in grupo:
+                print(o)
+            print("---")
         #----------------------------------------------------------------------------------
 
     #EJERCICIO 8
-    
+    print("\nEJERCICIO 8")
+
+    actuacion1 = actuacion_arqueologica("2023-01-01", "2023-06-30", "6 meses", "excavación")
+    actuacion2 = actuacion_arqueologica("2023-07-01", "2023-12-31", "6 meses", "sondeo")
+    actuacion3 = actuacion_arqueologica("2024-01-01", "2024-06-30", "6 meses", "seguimiento")
+    actuacion4 = actuacion_arqueologica("2024-07-01", "2024-12-31", "6 meses", "restauración")  # Tipo inválido    
+
+    print(actuacion1)
+    print(actuacion2)
+    print(actuacion3)
+    print(actuacion4)  # Tipo inválido

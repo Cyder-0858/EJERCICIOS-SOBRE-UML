@@ -49,3 +49,6 @@ EJERCICIO 7:
     profesión, utilizando tantas clases como sea necesario. Para facilitar la comprensión de tu modelo, incluye la 
     definición textual de las clases.
 
+EJERCICIO 8:
+    Una actuación arqueológica tiene una fecha de inicio, una fecha de fin y un tipo (sondeo, excavación o 
+    seguimiento). Define la clase correspondiente.
