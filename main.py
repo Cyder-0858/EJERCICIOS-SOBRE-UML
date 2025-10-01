@@ -8,7 +8,7 @@ from Ejercicio_7.ejercicio7 import Proyecto, miembro_del_equipo, lugar_de_Actuac
 from Ejercicio_8.Arqueologia import actuacion_arqueologica
 from Ejercicio_9.Pintura import TipoTecnica, TipoSub_tecnica, TipoMaterial, TipoEstado_Conservacion, Pintura
 from Ejercicio_10.Asociaciones_7 import Personaaaa, Proyectoooo, Lugar
-
+from Ejercicio_11.CuadrosACR import cuadro11, museo11
 
 
 if __name__ == "__main__":
@@ -144,5 +144,27 @@ if __name__ == "__main__":
 
     #EJERCICIO 11
     print("\nEJERCICIO 11")
+
+    museo1 = museo11("Museo del Prado", "Madrid")
+    museo2 = museo11("Museo del Louvre", "París")
+    cuadro1 = cuadro11("La Gioconda", "Óleo", "Da Vinci", museo2)
+    cuadro2 = cuadro11("Las Meninas", "Óleo", "Velazquez", museo1)
+
+    print(museo1)
+    print(museo2)
+    
+    #agregar cuadros a los museos
+    museo1.agregar_cuadro(cuadro2)
+    print(museo1)
+    museo2.agregar_cuadro(cuadro1)
+    print(museo2)
+
+    print(cuadro1)
+    print(cuadro2)
+
+    #EJERCICIO 12
+    print("\nEJERCICIO 12")
+
+    
     
     
