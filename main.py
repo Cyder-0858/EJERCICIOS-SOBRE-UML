@@ -10,7 +10,7 @@ from Ejercicio_9.Pintura import TipoTecnica, TipoSub_tecnica, TipoMaterial, Tipo
 from Ejercicio_10.Asociaciones_7 import Personaaaa, Proyectoooo, Lugar
 from Ejercicio_11.CuadrosACR import cuadro11, museo11
 from Ejercicio_12.estructura_arqueologica import EstructuraArqueologica
-from Ejercicio_13.Poli import punto, Poligono
+from Ejercicio_13.Poli import Punto, Poligono
 
 
 
@@ -187,26 +187,17 @@ if __name__ == "__main__":
 
     #EJERCICIO 13
     print("\nEJERCICIO 13")
-
-    punto1 = punto(0, 0)
-    punto2 = punto(1, 1)
-    punto3 = punto(1, 0)
-    punto4 = punto(0, 1)
     
-    Poligono1 = Poligono("1")
+    pt1 = Punto(-10, 10)
+    pt2 = Punto(10, 10)
+    pt3 = Punto(-10, -10)
+    pt4 = Punto(10, -10)
 
-    print(asignar_poligono(punto1, Poligono1))
-    print(asignar_poligono(punto2, Poligono1))
-    print(asignar_poligono(punto3, Poligono1))
-    print(asignar_poligono(punto4, Poligono1))
+    pol1 = Poligono("pol1")
 
-    print(posee_punto(Poligono1, punto1))
-    print(posee_punto(Poligono1, punto2))
-    print(posee_punto(Poligono1, punto3))
-    print(posee_punto(Poligono1, punto4))
+    pt1.asignar_a_poligono(pol1)
+    pt2.asignar_a_poligono(pol1)
+    pt3.asignar_a_poligono(pol1)
+    pt4.asignar_a_poligono(pol1)
 
-    print(punto1)
-    print(Punto2)
-    print(punto3)
-    print(punto4)
-    print(Poligono1)
+    print(pol1)
