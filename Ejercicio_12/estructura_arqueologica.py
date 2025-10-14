@@ -1,6 +1,6 @@
 #REVISAR
 class EstructuraArqueologica:
-    def __init__(self, codigo, datacion, materiales=None):
+    def __init__(self, codigo, datacion, materiales):
         self.codigo = codigo
         self.datacion = datacion
         self.materiales = materiales if materiales else []
@@ -8,11 +8,10 @@ class EstructuraArqueologica:
 
     def agregar_estructura(self, estructura):
         if isinstance(estructura, EstructuraArqueologica):
+            estructura.marco = self
             self.estructuras_compuestas.append(estructura)
 
     def __str__(self):
-        compuestas = [e.codigo for e in self.estructuras_compuestas]
-        return (f"Estructura {self.codigo} | Datación: {self.datacion} | "
-                f"Materiales: {self.materiales} | Compuestas por: {compuestas}")
+        return f"EstructuraArqueologica(codigo={self.codigo}, datacion={self.datacion}, materiales={self.materiales}, estructuras_compuestas={[e.codigo for e in self.estructuras_compuestas]})"
     
 #fuck off como dice bellingham

@@ -11,6 +11,7 @@ from Ejercicio_10.Asociaciones_7 import Personaaaa, Proyectoooo, Lugar
 from Ejercicio_11.CuadrosACR import cuadro11, museo11
 from Ejercicio_12.estructura_arqueologica import EstructuraArqueologica
 from Ejercicio_13.Poli import Punto, Poligono
+from Ejercicio_14.bellingham import punto_I, Triangulo
 
 
 
@@ -186,18 +187,53 @@ if __name__ == "__main__":
     print(estructura3)
 
     #EJERCICIO 13
-    print("\nEJERCICIO 13")
+    print("\nEJERCICIO 13") #ESTA MAL PUESTO, ES AL REVES (ESTO SON ASOCIACIONES)
     
-    pt1 = Punto(-10, 10)
-    pt2 = Punto(10, 10)
-    pt3 = Punto(-10, -10)
-    pt4 = Punto(10, -10)
+    p1 = Punto(0, 0)
+    p2 = Punto(1, 0)
+    p3 = Punto(1, 1)
+    p4 = Punto(0, 1)
 
-    pol1 = Poligono("pol1")
+    poligono1 = Poligono(1)
 
-    pt1.asignar_a_poligono(pol1)
-    pt2.asignar_a_poligono(pol1)
-    pt3.asignar_a_poligono(pol1)
-    pt4.asignar_a_poligono(pol1)
+    p1.asignar_a_poligono(poligono1)
+    p2.asignar_a_poligono(poligono1)
+    p3.asignar_a_poligono(poligono1)
+    p4.asignar_a_poligono(poligono1)
 
-    print(pol1)
+    print(poligono1)
+
+    for punto in poligono1.puntos:
+        print(punto)
+
+    #EJERCICIO 14
+    print("\nEJERCICIO 14")
+
+    p_1 = punto_I(0, 0)
+    p_2 = punto_I(1, 0)
+    p_3 = punto_I(0, 1)
+    p_4 = punto_I(1, 1)  # Este punto no debería poder agregarse
+    p_5 = punto_I(2, 2)
+    p_6 = punto_I(3, 3)
+    p_7 = punto_I(4, 5)
+
+    Triangulo1 = Triangulo(1)
+    Triangulo2 = Triangulo(2)
+
+    Triangulo1.agregar_punto(p_1)
+    Triangulo1.agregar_punto(p_2)
+    Triangulo1.agregar_punto(p_3)
+    Triangulo1.agregar_punto(p_4)  # Este debe mostrar un mensaje de error
+
+    Triangulo2.agregar_punto(p_5)
+    Triangulo2.agregar_punto(p_6)
+    Triangulo2.agregar_punto(p_7)
+
+    print(Triangulo1)
+    print(Triangulo2)
+
+    #EJECICIO 15
+    print("\nEJERCICIO 15")
+
+    
+
