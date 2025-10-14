@@ -1,0 +1,1 @@
+print("ya esta aplicado")
