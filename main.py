@@ -234,6 +234,10 @@ if __name__ == "__main__":
 
     #EJECICIO 15
     print("\nEJERCICIO 15")
+    print("Ya está aplicado")   
+
+    #EJERCICIO 16
+    print("\nEJERCICIO 16")
 
     
 
